@@ -1,19 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.Section {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,11 +21,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header {
+  position: fixed;
+  background-color: darkslateblue;
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 1% 2.5%;
+  justify-content: space-around;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  background-color: slategrey;
+  color: #282c34;
+  width: 100%;
+  padding: 0.5% 1%;
 }
